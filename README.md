@@ -1,4 +1,4 @@
-# Sitecore Speak UI Library
+# Sitecore SPEAK3 starter template
 
 This repository contains Speak 3 starter template.
 
@@ -14,7 +14,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Run within Sitecore
 
-Run `npm run build` command. Copy `dist` folder's content to your c:\{sitecoreRoot}\sitecore\shell\client\applications\startertemplate folder
-Open your sitecore instance on http://{sitecoreHost}/sitecore/shell/client/applications/startertemplate
+1. Run `npm run build` command. 
+2. Copy `dist` folder's content to your c:\{sitecoreRoot}\sitecore\shell\client\applications\startertemplate folder
+3. Open your sitecore instance on http://{sitecoreHost}/sitecore/shell/client/applications/startertemplate
 
 
