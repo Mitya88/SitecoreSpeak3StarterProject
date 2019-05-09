@@ -1,6 +1,6 @@
 <sc-page [showNav]="isNavigationShown">
   <div scPageHeader>
-    <sc-global-header appName="Sitecore Speak 3 Starter Template" [(show)]="isNavigationShown">
+    <sc-global-header appName="{applicationTitle}" [(show)]="isNavigationShown">
       <a href="#" scGlobalLogo></a>
       <!-- AccountInformation gets accountName and accountImageUrl automatically from Sitecore context which is configured in AppModule -->
       <sc-account-information (logout)="logoutService.logout()"></sc-account-information>

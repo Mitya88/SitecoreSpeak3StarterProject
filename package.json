@@ -1,12 +1,12 @@
 {
-  "name": "sitecore-speak-3-ui-library",
+  "name": "{applicationName}",
   "version": "0.2.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "npm run start:disconnected",
     "start:disconnected": "ng serve --proxy-config disconnected-mode.conf.js",
-    "build": "ng build --prod --base-href=/sitecore/shell/client/Applications/StarterTemplate/",
+    "build": "ng build --prod --base-href=/sitecore/shell/client/Applications/{applicationName}/",
     "postbuild": "ng-sc --entry ./dist/index.html && sc-license-checker",
     "test": "ng test",
     "lint": "ng lint",
