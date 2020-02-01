@@ -1,5 +1,5 @@
-$applicationName = "MityaName";
-$applicationTitle = "Hello Mitya!"
+$applicationName = "SPEAK3Application";
+$applicationTitle = "Hello SPEAK3!";
 $instanceWebRoot = "C:\\inetpub\\wwwroot\\scMityaTest93.local";
 $instanceHost = "https://scmityatest93.local"
 
