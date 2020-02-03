@@ -12,11 +12,23 @@ Run `npm run start` for a disconnected mode. Navigate to `http://localhost:4123/
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Run within Sitecore
+## Setup
 
-1. Set $applicationName & $applicationTitle variables in init.ps1 and run it.
-2. Run `npm run build` command. 
-3. Copy `dist` folder's content to your c:\{sitecoreRoot}\sitecore\shell\client\applications\startertemplate folder
-4. Open your sitecore instance on http://{sitecoreHost}/sitecore/shell/client/applications/startertemplate
+1. Set the following variables in `init.ps1`
+2. |Variable|Purpose|
+|----|----|
+|$applicationName| This will be your application name|
+|$applicationTitle| Application name which appears in the browser's title|
+|$instanceWebRoot | Webroot of your Sitecore instance|
+|$instanceHost| Url of your Sitecore instance|
+3. Run `init.ps1` script
+4. Run `npm install` command
+5. Run application in disconnected mode, run `npm run start` command
+6. Run `npm run deploy` command 
+
+`npm run deploy` command will build the application, copy files into your Sitecore instance and open the application in sitecore
+- Files will be copied to {$instanceWebroot}\sitecore\shell\client\applications\{$applicationName} folder
+- Browser will be opened on {$instanceHost}\sitecore\shell\client\{$application} url
+- You can add the following shortcut to your launchpad : {$instanceHost}\sitecore\shell\client\{$application} url
 
 
