@@ -10,7 +10,12 @@
     "postbuild": "ng-sc --entry ./dist/index.html && sc-license-checker",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "delete":"del-cli --force {instanceWebRoot}\\sitecore\\shell\\client\\applications\\{applicationName}",
+    "createDir":"make-dir {instanceWebRoot}\\sitecore\\shell\\client\\applications\\{applicationName}",
+    "copy":"xcopy .\\dist {instanceWebRoot}\\sitecore\\shell\\client\\applications\\{applicationName} /h/i/c/k/e/r/y",
+    "open":"open-cli {instanceHost}/sitecore/shell/client/applications/{applicationName}",
+    "deploy":"npm run build && npm run delete && npm run createDir && npm run copy && npm run open"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +44,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
+    "del-cli": "^3.0.0",
     "express": "^4.15.4",
     "express-mock-middleware": "0.0.6",
     "jasmine-core": "~2.6.2",
@@ -49,6 +55,8 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "make-dir-cli": "^2.0.0",
+    "open-cli": "^5.0.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
