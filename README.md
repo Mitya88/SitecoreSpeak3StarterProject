@@ -14,13 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Setup
 
-1. Set the following variables in `init.ps1`
-2. |Variable|Purpose|
-|----|----|
-|$applicationName| This will be your application name|
-|$applicationTitle| Application name which appears in the browser's title|
-|$instanceWebRoot | Webroot of your Sitecore instance|
-|$instanceHost| Url of your Sitecore instance|
+1. Set the variables in `init.ps1` (see below). 
 3. Run `init.ps1` script
 4. Run `npm install` command
 5. Run application in disconnected mode, run `npm run start` command
@@ -31,4 +25,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 - Browser will be opened on {$instanceHost}\sitecore\shell\client\{$application} url
 - You can add the following shortcut to your launchpad : {$instanceHost}\sitecore\shell\client\{$application} url
 
+## Variables
+|Variable|Purpose|
+|----|----|
+|$applicationName| This will be your application name|
+|$applicationTitle| Application name which appears in the browser's title|
+|$instanceWebRoot | Webroot of your Sitecore instance|
+|$instanceHost| Url of your Sitecore instance|
 
